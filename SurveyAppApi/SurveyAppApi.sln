@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurveyAppApi", "SurveyAppApi\SurveyAppApi.csproj", "{5E528915-F77E-4DE9-B03B-208A63280982}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{7372D678-338F-4DC0-B2F5-18D071AEC248}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5E528915-F77E-4DE9-B03B-208A63280982} = {5E528915-F77E-4DE9-B03B-208A63280982}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E528915-F77E-4DE9-B03B-208A63280982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E528915-F77E-4DE9-B03B-208A63280982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E528915-F77E-4DE9-B03B-208A63280982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E528915-F77E-4DE9-B03B-208A63280982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7372D678-338F-4DC0-B2F5-18D071AEC248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7372D678-338F-4DC0-B2F5-18D071AEC248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7372D678-338F-4DC0-B2F5-18D071AEC248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7372D678-338F-4DC0-B2F5-18D071AEC248}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F65D878F-5C25-43CE-B663-9E552A748FCD}
+	EndGlobalSection
+EndGlobal

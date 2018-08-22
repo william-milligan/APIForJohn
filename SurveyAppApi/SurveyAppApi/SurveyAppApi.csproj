@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20180708142217_test.cs" />
+    <Compile Remove="Migrations\20180708142217_test.Designer.cs" />
+    <Compile Remove="Migrations\20180708145530_SubQuestion.cs" />
+    <Compile Remove="Migrations\20180708145530_SubQuestion.Designer.cs" />
+    <Compile Remove="Migrations\20180708170832_Constraint.cs" />
+    <Compile Remove="Migrations\20180708170832_Constraint.Designer.cs" />
+    <Compile Remove="Migrations\20180708171046_Constraint.cs" />
+    <Compile Remove="Migrations\20180708171046_Constraint.Designer.cs" />
+    <Compile Remove="Migrations\20180709212705_Error.cs" />
+    <Compile Remove="Migrations\20180709212705_Error.Designer.cs" />
+    <Compile Remove="Migrations\20180723024238_SavedResponses.cs" />
+    <Compile Remove="Migrations\20180723024238_SavedResponses.Designer.cs" />
+    <Compile Remove="Migrations\20180725182937_Forgot Qestion Akd.cs" />
+    <Compile Remove="Migrations\20180725182937_Forgot Qestion Akd.Designer.cs" />
+    <Compile Remove="Migrations\20180730152802_OtherQuestionTable.cs" />
+    <Compile Remove="Migrations\20180730152802_OtherQuestionTable.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="4.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+</Project>

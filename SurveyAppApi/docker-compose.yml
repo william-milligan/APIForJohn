@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  surveyappapi:
+    image: ${DOCKER_REGISTRY}surveyappapi
+    build:
+      context: .
+      dockerfile: SurveyAppApi\Dockerfile
